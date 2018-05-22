@@ -1,0 +1,36 @@
+{
+  "name": "ipbes_new",
+  "description": "A theme based on Radix.",
+  "browserSyncProxy" : "http://drupal7.dev",
+  "bowerDir": "./bower_components",
+  "css": {
+    "file" : "ipbes_new.style.scss",
+    "src": [
+      "scss/**/*.scss"
+    ],
+    "dest": "assets/css",
+    "includePaths": [
+      "./bower_components/bootstrap-sass/assets/stylesheets",
+      "./bower_components/font-awesome/scss"
+    ]
+  },
+  "js": {
+    "file" : "ipbes_new.script.js",
+    "src": [
+      "assets/js/**/*.js"
+    ],
+    "dest": "assets/js"
+  },
+  "images": {
+    "src": [
+      "assets/images/**/*"
+    ],
+    "dest": "assets/images/"
+  },
+  "fonts": {
+    "src": [
+      "./bower_components/font-awesome/fonts/**.*"
+    ],
+    "dest": "./assets/fonts/"
+  }
+}
