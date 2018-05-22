@@ -97,3 +97,18 @@ gulp.task('js-lint', function() {
 
 // Default Task
 gulp.task('default', ['serve']);
+
+gulp.task('dist', ['css'], function() {
+  var dist = process.env.DIST;
+  var theme_name = 'ipbes_new';
+  if (dist) {
+    var dest = dist + '/' + theme_name;
+    console.log('About to distribute theme to ' + dest)
+    return gulp.src(['assets**/**/*', 'templates**/**/*', 'panels**/**/*', 'template.php', 'ipbes_new.info', 'screenshot.png'])
+      .pipe(gulp.dest(dest));
+  }
+  else {
+    console.log('No dist folder was provided. export DIST=../');
+  }
+
+})

@@ -1,5 +1,5 @@
 name        = ipbes_new
-description = A theme based on Radix.
+description = A new theme for the IPBES website based on Radix.
 screenshot  = screenshot.png
 core        = 7.x
 
@@ -35,4 +35,3 @@ version = "7.x-3.6"
 core = "7.x"
 project = "radix"
 datestamp = "1486032196"
-
