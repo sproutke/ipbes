@@ -18,6 +18,7 @@ var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
 var scssLint = require('gulp-scss-lint');
 var jshint = require('gulp-jshint');
+var clean = require('gulp-clean');
 
 // CSS.
 gulp.task('css', function() {
@@ -97,6 +98,21 @@ gulp.task('js-lint', function() {
 
 // Default Task
 gulp.task('default', ['serve']);
+
+gulp.task('clean-dist', function() {
+  var dist = process.env.DIST;
+  var theme_name = 'ipbes_new';
+
+  if (dist) {
+    var dest = dist + '/' + theme_name;
+    console.log('Deleting dist folder', dest);
+    return
+      gulp.src(dest, { read: false })
+        .pipe(clean({force: true}));
+  }
+  else
+    console.log('No dist folder was provided. export DIST=../');
+})
 
 gulp.task('dist', ['css'], function() {
   var dist = process.env.DIST;

@@ -4,11 +4,12 @@ screenshot  = screenshot.png
 core        = 7.x
 
 ; Base - Radix
-base theme  = radix
+base theme  = nuboot_radix
 
 
 ; Regions
 regions[content] = Content
+regions[header]         = 'Header'
 
 ; Breakpoints
 breakpoints[xs] = (max-width: 767px)
