@@ -28,5 +28,8 @@
     "imagemin-pngcrush": "~5.0.0",
     "jshint": "~2.9.1",
     "node-sass": "^4.5.0"
+  },
+  "dependencies": {
+    "gulp-ignore": "^2.0.2"
   }
 }

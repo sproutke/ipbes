@@ -1,0 +1,37 @@
+.footer {
+  .ipbes-mark {
+    p {
+      color: #999;
+      font-size: 80%;
+      font-weight: 500;
+    }
+  }
+
+  .copyright {
+    padding: 1em;
+  }
+  .partner-logos {
+    img {
+      width: 100%;
+    }
+  }
+  .footer-headers {
+    background-color: #eee;
+    width: 100%;
+    padding: 0.25em 0;
+  }
+
+  .footer-links {
+    background-color: rgba(245, 245, 245, 1);
+    padding: 1em 0;
+
+    .menu-links {
+      a {
+        display: block;
+        margin: 0.5em 0;
+        color: rgba(51,51,51,0.8);
+        font-size: 1.15em;
+      }
+    }
+  }
+}
