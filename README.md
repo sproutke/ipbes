@@ -17,7 +17,11 @@ Go to the root of `ipbes_new` theme and run the following commands: `npm run set
 To install using Yarn, run `yarn install && bower install`.
 
 #### Step 4
-Update `browserSyncProxy` in **config.json**.
+
+Configure the destination folder. This is only the source code for the theme and the generated assets need to be
+copied to the panthoen repository in the `sites/all/themes` folder
+
 
 #### Step 5
-Run the following command to compile Sass and watch for changes: `gulp`.
+
+Run `gulp dist`

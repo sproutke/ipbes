@@ -120,7 +120,7 @@ gulp.task('dist', ['css'], function() {
   if (dist) {
     var dest = dist + '/' + theme_name;
     console.log('About to distribute theme to ' + dest)
-    return gulp.src(['assets**/**/*', 'templates**/**/*', 'panels**/**/*', 'template.php', 'ipbes_new.info', 'screenshot.png', 'logo.png'])
+    return gulp.src(['assets**/**/*', '!assets/css/*.map', 'templates**/**/*', 'panels**/**/*', 'template.php', 'ipbes_new.info', 'screenshot.png', 'logo.png'])
       .pipe(gulp.dest(dest));
   }
   else {
