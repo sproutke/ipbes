@@ -19,6 +19,46 @@
       border: 1px solid #ffffff;
       border-radius: 2em;
       padding: 1em;
+      color: #ffffff;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.hero-focus-areas {
+  .focus-item {
+    div {
+      background-color: #eee;
+
+      a {
+        color: $primary-color;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .topic-icon {
+        a {
+          text-align: center;
+          display: block;
+
+          .font-icon-select-1 {
+            font-size: 6em;
+          }
+        }
+      }
+
+      .topic-name {
+        a {
+          text-align: center;
+          display: block;
+          padding-bottom: 0.5em;
+        }
+      }
     }
   }
 }

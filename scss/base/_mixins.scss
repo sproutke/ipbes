@@ -1,2 +1,15 @@
 // Mixins
 // -----------------------------------------------------------------------------
+
+
+@mixin link-button {
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  border-radius: 2em;
+  padding: 1em;
+  color: #ffffff;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

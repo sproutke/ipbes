@@ -1,0 +1,41 @@
+.news {
+  h2.pane-title {
+    border-bottom: 0px;
+    color: $primary-color;
+    font-weight: 700;
+  }
+
+  .pane-content {
+    .views-row {
+      background-color: $primary-color;
+      padding: 0;
+
+      .views-field-title {
+        padding: 0 1em;
+
+        h2 {
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+
+      .views-field-body {
+        padding: 1em;
+        .field-content {
+          p {
+            color: #ffffff;
+          }
+        }
+      }
+
+      .views-field-view-node {
+        .field-content {
+          a {
+            @include link-button;
+          }
+        }
+      }
+    }
+  }
+}

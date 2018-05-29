@@ -14,6 +14,8 @@ $plugin = array(
   'regions' => array(
     'menu' => t('Menu'),
     'banner' => t('Banner'),
+    'focus-areas' => t('Focus Areas'),
+    'news' => t('News'),
     'footer' => t('Footer Copyright')
   ),
 );
