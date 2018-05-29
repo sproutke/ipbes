@@ -8,8 +8,8 @@ base theme  = nuboot_radix
 
 
 ; Regions
-regions[content] = Content
 regions[header]         = 'Header'
+regions[content]         = 'Content'
 
 ; Breakpoints
 breakpoints[xs] = (max-width: 767px)
