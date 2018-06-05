@@ -1,2 +1,50 @@
 // Page Layout
 // -----------------------------------------------------------------------------
+
+.top-menu {
+
+  h2.pane-title {
+    display: none;
+  }
+
+  .top-dd-menu {
+    .menu-level-1 {
+      .menu.nav {
+        float: right;
+        background-color: $primary-color;
+        padding: 0.15em 1em;
+        margin-bottom: 1em;
+        overflow: visible;
+
+        li.expanded {
+          ul.nav-stacked   {
+            display: none;
+          }
+        }
+
+        a {
+          color: #ffffff;
+          font-size: 1.15em;
+
+          .caret {
+            color: $primary-color;
+            margin-left: 0.5em;
+          }
+
+          &:hover {
+            background-color: $primary-color;
+            .caret {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+
+    .nav-stacked>li,
+    .nav-pills>li {
+      float: left;
+    }
+  }
+}

@@ -14,7 +14,7 @@
         <div class="col-md-8 col-md-offset-4">
           <?php print $content['menu']; ?>
 
-          <ul class="nav nav-pills">
+          <!-- <ul class="nav nav-pills">
             <li class="nav-item">
               <a class="nav-link">About</a>
             </li>
@@ -33,7 +33,7 @@
             <li class="nav-item">
               <a class="nav-link">Resources</a>
             </li>
-          </ul>
+          </ul> -->
 
         </div>
       </div>
