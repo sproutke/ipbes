@@ -63,6 +63,12 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest(config.fonts.dest));
 });
 
+gulp.task('js', function() {
+  gulp.src(config.js.src)
+    .pipe(uglify())
+    .pipe(gulp.dest(config.js.dest));
+})
+
 // Watch task.
 gulp.task('watch', function() {
   gulp.watch(config.css.src, ['css']);
@@ -114,7 +120,7 @@ gulp.task('clean-dist', function() {
     console.log('No dist folder was provided. export DIST=../');
 })
 
-gulp.task('dist', ['css'], function() {
+gulp.task('dist', ['css', 'js'], function() {
   var dist = process.env.DIST;
   var theme_name = 'ipbes_new';
   if (dist) {

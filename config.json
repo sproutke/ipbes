@@ -17,7 +17,7 @@
   "js": {
     "file" : "ipbes_new.script.js",
     "src": [
-      "assets/js/**/*.js"
+      "js/**/*.js"
     ],
     "dest": "assets/js"
   },

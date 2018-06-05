@@ -13,6 +13,28 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-4">
           <?php print $content['menu']; ?>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Work Programme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Documents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Resources</a>
+            </li>
+          </ul>
+
         </div>
       </div>
      </div>
