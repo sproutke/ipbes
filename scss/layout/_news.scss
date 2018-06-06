@@ -7,9 +7,15 @@
 
   .pane-content {
     .views-row.news-item {
-      background-color: $primary-color;
-      padding: 0;
-      min-height: 400px;
+
+      .fields-container {
+        background-color: $primary-color;
+        min-height: 450px;
+      }
+
+      a.more-link {
+        @include link-button;
+      }
 
       .views-field-title {
         padding: 0 1em;
