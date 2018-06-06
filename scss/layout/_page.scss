@@ -32,10 +32,9 @@
           }
 
           &:hover {
-            background-color: $primary-color;
-            .caret {
-              color: #ffffff;
-            }
+            background-color: #ffffff;
+            border-radius: 0;
+            color: $primary-color;
           }
         }
       }
