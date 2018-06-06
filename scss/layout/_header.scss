@@ -61,16 +61,35 @@
   }
 
   .register-links {
-    text-align: right;
-    margin-top: 3em;
 
-    a {
-      font-size: 1.15em;
-      color: $primary-color;
-      font-weight: 500;
+    .content {
+      a {
+        img {
+          display: none;
+        }
+      }
+      .links {
+        text-align: right;
+        margin-top: 3em;
 
-      &:hover {
-        text-decoration: none;
+        a {
+          font-size: 1.15em;
+          color: $primary-color !important;
+          font-weight: 500;
+          padding: 0 !important;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &:first-child {
+            border-right: 1px solid $primary-color;
+            padding-right: 1em !important;
+            margin-right: 1em;
+          }
+        }
+
+
       }
     }
   }
