@@ -49,7 +49,7 @@
             <input type="text" placeholder="Enter search terms" />
           </form>
         </div>
-        <div class="register-links">          
+        <div class="register-links">
           <?php
             if($display_login_menu):
               $block = block_load('dkan_sitewide', 'dkan_sitewide_user_menu');
@@ -71,29 +71,29 @@
 <div class="navigation-wrapper" id="sticky-navbar">
   <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-4">
-          <nav class="navbar navbar-default" role="navigation">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div> <!-- /.navbar-header -->
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <!-- Main Menu -->
-        <?php if ($main_menu): ?>
-          <ul id="main-menu" class="menu nav navbar-nav">
-            <?php print render($main_menu); ?>
-          </ul>
-        <?php endif; ?>
-      </div><!-- /.navbar-collapse -->
-    </nav><!-- /.navbar -->
-  </div><!-- /.offset -->
-</div><!-- /.row -->
-</div><!-- /.container -->
+      <div class="col-md-8 col-md-offset-4 top-menu">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div> <!-- /.navbar-header -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <!-- Main Menu -->
+            <?php if ($main_menu): ?>
+              <ul id="main-menu" class="menu nav navbar-nav">
+                <?php print render($main_menu); ?>
+              </ul>
+            <?php endif; ?>
+          </div><!-- /.navbar-collapse -->
+        </nav><!-- /.navbar -->
+      </div><!-- /.offset -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
 </div> <!-- /.navigation -->
 
 <div id="main-wrapper">

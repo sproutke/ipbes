@@ -2,48 +2,40 @@
 // -----------------------------------------------------------------------------
 
 .top-menu {
+  padding-right: 0em;
 
-  h2.pane-title {
-    display: none;
-  }
+  .navbar-default {
+    background-color: $primary-color;
+    border-color: $primary-color;
 
-  .top-dd-menu {
-    .menu-level-1 {
-      .menu.nav {
-        float: right;
-        background-color: $primary-color;
-        padding: 0.15em 1em;
-        margin-bottom: 1em;
-        overflow: visible;
-
-        li.expanded {
-          ul.nav-stacked   {
-            display: none;
-          }
-        }
-
-        a {
-          color: #ffffff;
-          font-size: 1.15em;
-
-          .caret {
-            color: $primary-color;
-            margin-left: 0.5em;
-          }
-
-          &:hover {
-            background-color: #ffffff;
-            border-radius: 0;
-            color: $primary-color;
-          }
-        }
-      }
+    // .navbar-default .navbar-nav>li>a
+    .navbar-nav>li>a {
+      color: #ffffff;
     }
 
+    a {
+      font-size: 1.15em;
+    }
+  }
 
-    .nav-stacked>li,
-    .nav-pills>li {
-      float: left;
+  .navbar {
+    border-radius: 0px;
+
+    ul.menu {
+      float: right;
+    }
+
+    .dropdown-menu {
+      background-color: $primary-color;
+
+      // .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus
+      li > a {
+        &:hover,
+        &:focus {
+          background-color: #ffffff;
+          color: $primary-color;
+        }
+      }
     }
   }
 }
