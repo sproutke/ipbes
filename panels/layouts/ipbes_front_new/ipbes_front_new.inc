@@ -12,7 +12,6 @@ $plugin = array(
   'theme' => 'panels-ipbes_front_new',
   'css' => 'ipbes_front_new.css',
   'regions' => array(
-    'menu' => t('Menu'),
     'banner' => t('Banner'),
     'focus-areas' => t('Focus Areas'),
     'news' => t('News'),

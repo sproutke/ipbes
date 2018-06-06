@@ -7,40 +7,6 @@
 ?>
 <div class="panel-display panel-dkan-front clearfix" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
 
-  <?php if($content['menu']): ?>
-   <div class="panel-menu top-menu">
-     <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-4">
-          <?php print $content['menu']; ?>
-
-          <!-- <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Work Programme</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Calendar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Documents</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Resources</a>
-            </li>
-          </ul> -->
-
-        </div>
-      </div>
-     </div>
-   </div>
-  <?php endif; ?>
-
   <?php if($content['banner'] || $content['focus-areas']): ?>
     <div class="panel-banner banner">
       <div class="container">
