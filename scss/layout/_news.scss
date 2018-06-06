@@ -6,9 +6,10 @@
   }
 
   .pane-content {
-    .views-row {
+    .views-row.news-item {
       background-color: $primary-color;
       padding: 0;
+      min-height: 400px;
 
       .views-field-title {
         padding: 0 1em;
@@ -31,6 +32,7 @@
 
       .views-field-view-node {
         .field-content {
+          padding: 1em;
           a {
             @include link-button;
           }
