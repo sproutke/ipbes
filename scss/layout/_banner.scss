@@ -30,8 +30,20 @@
 
 .hero-focus-areas {
   .views-row-first {
-    margin-top: -1.5em
+    margin-top: -1.75em;
+    margin-bottom: 3.75rem;
   }
+
+  .views-row-last {
+    .focus-item {
+      &:nth-child(2) {
+        .topic-name {
+          padding-bottom: 1.2em
+        }
+      }
+    }
+  }
+
   .focus-item {
     height: 100%;
     div {
@@ -46,6 +58,7 @@
       }
 
       .topic-icon {
+        height: 140px;
         a {
           text-align: center;
           display: block;

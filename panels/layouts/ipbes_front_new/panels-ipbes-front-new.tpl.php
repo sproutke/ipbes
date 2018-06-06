@@ -7,6 +7,14 @@
 ?>
 <div class="panel-display panel-dkan-front clearfix" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
 
+  <?php if($content['slider']): ?>
+    <div class="panel-slider panel-row">
+      <div class="container-fluid">
+        <div class="inside"><?php print $content['slider']; ?></div>
+      </div>
+    </div>
+  <?php endif; ?>
+  
   <?php if($content['banner'] || $content['focus-areas']): ?>
     <div class="panel-banner banner">
       <div class="container">
