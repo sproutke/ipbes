@@ -13,10 +13,6 @@
         min-height: 450px;
       }
 
-      a.more-link {
-        @include link-button;
-      }
-
       .views-field-title {
         padding: 0 1em;
 
@@ -44,6 +40,40 @@
           }
         }
       }
+    }
+
+    .more-link {
+      top: 2em;
+      position: relative;
+      left: -1em;
+
+      a {
+        @include link-button;
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+.notifications {
+  margin: 2em 0;
+  padding: 2em 0;
+  background-color: $primary-color;
+
+  h2.pane-title {
+    color: #ffffff;
+    border-bottom: 0px;
+  }
+
+  .view-content {
+    .views-field-title,
+    .views-field-nothing {
+      a {
+        color: #ffffff;
+      }
+    }
+    .views-field-field-application-period {
+      color: #ffffff;
     }
   }
 }

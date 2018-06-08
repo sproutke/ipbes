@@ -14,7 +14,7 @@
       </div>
     </div>
   <?php endif; ?>
-  
+
   <?php if($content['banner'] || $content['focus-areas']): ?>
     <div class="panel-banner banner">
       <div class="container">
@@ -36,6 +36,29 @@
         <div class="row">
           <div class="col-md-12">
             <?php print $content['news']; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
+  <?php if($content['notifications']): ?>
+    <div class="panel-news notifications">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <?php print $content['notifications']; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
+
+  <?php if($content['events']): ?>
+    <div class="panel-news events">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <?php print $content['events']; ?>
           </div>
         </div>
       </div>

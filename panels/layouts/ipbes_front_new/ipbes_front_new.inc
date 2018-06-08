@@ -16,6 +16,8 @@ $plugin = array(
     'banner' => t('Banner'),
     'focus-areas' => t('Focus Areas'),
     'news' => t('News'),
+    'notifications' => t('Notifications'),
+    'events' => t('Events'),
     'footer' => t('Footer Copyright')
   ),
 );
