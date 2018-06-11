@@ -55,14 +55,63 @@
   }
 }
 
+.events,
 .notifications {
-  margin: 2em 0;
+  margin: 4em 0;
   padding: 2em 0;
+
+  h2.pane-title {
+    border-bottom: 0px;
+  }
+  .more-link {
+    position: absolute;
+    top: -4em;
+    right: 0;
+    font-weight: 700;
+
+    a {
+      text-transform: uppercase;
+      color: $primary-color;
+    }
+  }
+
+  .view-content {
+
+    .views-field-title {
+      h2 {
+        margin-top: 0.25em;
+      }
+    }
+
+    .views-row-first.row {
+      margin-bottom: 4em;
+    }
+    .views-row-last.row {
+      margin-top: 3em;
+    }
+  }
+}
+
+.events {
+  h2.pane-title {
+    color: $primary-color;
+  }
+
+  .view-content {
+    color: $primary-color;
+    .views-field-title {
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+
+.notifications {
   background-color: $primary-color;
 
   h2.pane-title {
     color: #ffffff;
-    border-bottom: 0px;
   }
 
   .view-content {
@@ -73,6 +122,12 @@
       }
     }
     .views-field-field-application-period {
+      color: #ffffff;
+    }
+  }
+
+  .more-link {
+    a {
       color: #ffffff;
     }
   }
