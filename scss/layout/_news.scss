@@ -132,3 +132,21 @@
     }
   }
 }
+
+@include media-breakpoint-down(medium) {
+  .events,
+  .notifications {
+    .view-content {
+      .views-row-first.row {
+        margin-bottom: 0em;
+      }
+      .views-row-last.row {
+        margin-top: 0em;
+      }
+      .view-column {
+        margin-bottom: 2em;
+        padding: 0 2em;
+      }
+    }
+  }
+}

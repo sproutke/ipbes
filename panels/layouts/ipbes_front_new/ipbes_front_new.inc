@@ -18,6 +18,8 @@ $plugin = array(
     'news' => t('News'),
     'notifications' => t('Notifications'),
     'events' => t('Events'),
-    'footer' => t('Footer Copyright')
+    'footer-menu' => t('Footer Menu'),
+    'footer-communities' => t('Footer Communities'),
+    'footer-contacts' => t('Footer Contacts')
   ),
 );

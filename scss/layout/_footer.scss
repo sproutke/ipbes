@@ -1,4 +1,6 @@
 .footer {
+  border-top: 1px solid #eee;
+  
   .ipbes-mark {
     p {
       color: #999;
@@ -13,6 +15,15 @@
   .partner-logos {
     img {
       width: 100%;
+    }
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      width: 25%;
+
+      &.slim {
+        width: 10%;
+      }
     }
   }
   .footer-headers {

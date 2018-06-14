@@ -13,3 +13,9 @@
     text-decoration: none;
   }
 }
+
+@mixin media-breakpoint-down($point) {
+  @if $point == medium {
+    @media (max-width: 576px) { @content; }
+  }
+}
