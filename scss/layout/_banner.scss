@@ -79,3 +79,11 @@
     }
   }
 }
+
+@include media-breakpoint-down(medium) {
+  .hero-focus-areas {
+    .views-row-first {
+      margin-bottom: 0;
+    }
+  }
+}

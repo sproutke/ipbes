@@ -64,9 +64,10 @@
     border-bottom: 0px;
   }
   .more-link {
-    position: absolute;
-    top: -4em;
-    right: 0;
+    // position: absolute;
+    // top: -4em;
+    // right: 0;
+    float: right;
     font-weight: 700;
 
     a {
@@ -136,7 +137,27 @@
 @include media-breakpoint-down(medium) {
   .events,
   .notifications {
+    margin-bottom: 1em;
+
+    h2.pane-title {
+      padding-left: 0.5em;
+    }
+
+    .more-link {
+      position: relative;
+      top: 0;
+    }
+
     .view-content {
+
+      .row {
+        margin-left: 0;
+
+        .views-column {
+          margin-bottom: 2em;
+        }
+      }
+
       .views-row-first.row {
         margin-bottom: 0em;
       }
