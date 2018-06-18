@@ -94,3 +94,15 @@
     }
   }
 }
+
+@include media-breakpoint-down(medium) {
+
+  #block-dkan-sitewide-dkan-sitewide-user-menu .links a {
+    display: inline-block;
+  }
+  .header {
+    .register-links {
+      margin-bottom: 1em;
+    }
+  }
+}

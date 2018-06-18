@@ -43,9 +43,12 @@
     }
 
     .more-link {
-      top: 2em;
-      position: relative;
-      left: -1em;
+      // top: 2em;
+      // position: relative;
+      // left: -1em;
+      float: right;
+      margin-top: 2em;
+      margin-right: 1em;
 
       a {
         @include link-button;
@@ -104,6 +107,9 @@
       a {
         color: #000;
       }
+    }
+    .date-display-range {
+      font-weight: 700;
     }
   }
 }
@@ -168,6 +174,16 @@
         margin-bottom: 2em;
         padding: 0 2em;
       }
+    }
+  }
+
+  .news {
+    .news-item {
+      margin-bottom: 1em;
+    }
+
+    h2.pane-title {
+      padding-left: 0.5em;
     }
   }
 }
