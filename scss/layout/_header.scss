@@ -95,6 +95,16 @@
   }
 }
 
+@include media-breakpoint-down(tablet) {
+  .hero-focus-areas {
+    padding: 1em;
+  }
+
+  .news-item {
+    margin-bottom: 1em;
+  }
+}
+
 @include media-breakpoint-down(medium) {
 
   #block-dkan-sitewide-dkan-sitewide-user-menu .links a {
@@ -103,6 +113,16 @@
   .header {
     .register-links {
       margin-bottom: 1em;
+    }
+  }
+
+  .top-menu .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+
+    .navbar-header {
+      float: right;
+      margin-top: -4em;
     }
   }
 }
