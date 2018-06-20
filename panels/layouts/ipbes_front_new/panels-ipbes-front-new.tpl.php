@@ -10,7 +10,7 @@
   <?php if($content['slider']): ?>
     <div class="panel-slider panel-row">
       <div class="container-fluid">
-        <div class="inside"><?php print $content['slider']; ?></div>
+        <div class="inside row"><?php print $content['slider']; ?></div>
       </div>
     </div>
   <?php endif; ?>

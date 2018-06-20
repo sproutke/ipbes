@@ -10,78 +10,49 @@
  * @see html.tpl.php
  */
 ?>
-<header id="header" class="header case-study">
-  <div class="branding container">
-    <?php if ($logo): ?>
-      <a class="logo navbar-btn pull-left" href="<?php print url($front_page); ?>" title="<?php print t('Home'); ?>">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-      </a>
-    <?php endif; ?>
-    <?php if ($site_name || $site_slogan): ?>
-      <div class="site-name-wrapper">
-        <?php if ($site_name): ?>
-          <a class="site-name" href="<?php print url($front_page); ?>" title="<?php print t('Home'); ?>">
-            <?php print $site_name; ?>
+
+<header id="header" class="header">
+  <div class="top_bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-8 social_column">
+          <p class="social-text">Connect with us</p>
+          <div class="social-icons">
+            <a href="https://facebook.com/ipbes" target="_blank">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+            <a href="https://twitter.com/IPBES" target="_blank">
+              <i class="fa fa-twitter-square"></i>
+            </a>
+            <a href="https://linkedin.com/company/ipbes"  target="_blank">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+            <a href="https://instagram.com/ipbes_"  target="_blank">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 logo-holder">
+        <?php if ($logo): ?>
+          <a class="logo" href="<?php print url($front_page); ?>" title="<?php print t('Home'); ?>">
+            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
           </a>
         <?php endif; ?>
-        <?php if (!empty($site_slogan)): ?>
-          <div class="site-slogan"><?php print $site_slogan; ?></div>
-        <?php endif; ?>
       </div>
-    <?php endif; ?>
-    <!-- views exposed search -->
-	<div class="pull-right">
-	<?php
-      $block = module_invoke('views', 'block_view', '-exp-search_index-page');
-        print render($block['content']);
-    ?>
-        <!-- Social media block -->
-    <?php
-      $block = module_invoke('block', 'block_view', '2');
-        print render($block['content']);
-    ?>
-</div>
-	</div>
-
-  </div>
-  <!-- By SK - Sticky navbar id add -->
-  <div class="navigation-wrapper" id="sticky-navbar">
-    <div class="container">
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div> <!-- /.navbar-header -->
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <!-- By SK SK menu added / but disabled-->
+      <div class="col-md-3 col-md-offset-5">
+        <div class="search-widget">
           <?php
-          /* START DISABLE
-          <?php if (!empty($page['sk_menu'])): ?>
-          <?php print render($page['sk_menu']); ?>
-          <?php endif; ?>
-          END DISABLE */
+            $block = module_invoke('views', 'block_view', '-exp-search_index-page');
+              print render($block['content']);
           ?>
-
-          <!-- By SK existing menu undeleted -->  <!-- By SK Reverting to the previous menu 20180501 -->
-          <?php if ($main_menu): ?>
-            <ul id="main-menu" class="menu nav navbar-nav">
-              <?php print render($main_menu); ?>
-            </ul>
-          <?php endif; ?>
-
-          <!-- BA: menu block main menu -->
-          <?php
-          $block = module_invoke('block', 'block_view', '6');
-          print render($block['content']);
-          ?>
-
-          <!-- user menu -->
+        </div>
+        <div class="register-links">
           <?php
             if($display_login_menu):
               $block = block_load('dkan_sitewide', 'dkan_sitewide_user_menu');
@@ -91,12 +62,42 @@
               endif;
             endif;
           ?>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        </div><!-- /.navbar-collapse -->
-      </nav><!-- /.navbar -->
-    </div><!-- /.container -->
-  </div> <!-- /.navigation -->
 </header>
+
+<!-- Navigation: sticky -->
+
+<div class="navigation-wrapper" id="sticky-navbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-4 top-menu">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div> <!-- /.navbar-header -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <!-- Main Menu -->
+            <?php if ($main_menu): ?>
+              <ul id="main-menu" class="menu nav navbar-nav">
+                <?php print render($main_menu); ?>
+              </ul>
+            <?php endif; ?>
+          </div><!-- /.navbar-collapse -->
+        </nav><!-- /.navbar -->
+      </div><!-- /.offset -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div> <!-- /.navigation -->
 
 <div id="main-wrapper">
   <div id="main" class="main container">
@@ -160,19 +161,30 @@
 
   </div> <!-- /#main -->
 </div> <!-- /#main-wrapper -->
-<footer id="footer" class="footer">
-  <div class="container">
-  <div class="col-xs-12 col-md-4"><?php print render($page['footer_first']); ?></div>
-  <div class="col-xs-12 col-md-4"><?php print render($page['footer_second']); ?></div>
-  <div class="col-xs-12 col-md-4"><?php print render($page['footer_third']); ?></div>
-  </div>
-</footer>
 
-<footer id="footer" class="footer-clean">
-  <div class="container">
-    <?php if ($copyright): ?>
-      <small class="copyright"><?php print $copyright; ?></small>
-    <?php endif; ?>
-    <?php print render($page['footer']); ?>
+<footer id="footer" class="footer">
+  <div class="container copyright">
+    <div class="row">
+      <div class="ipbes-mark col-md-6">
+        <p>&copy; IPBES Secretariat</p>
+        <?php if($content['footer-contacts']): ?>
+          <?php print $content['footer-contacts']; ?>
+        <?php endif; ?>
+      </div>
+      <div class="partner-logos col-md-6">
+        <a href="//www.unep.org" target="_blank">
+          <img src="/sites/all/themes/ipbes_new/panels/layouts/ipbes_front_new/img/unep.png" alt="UNEP"/>
+        </a>
+        <a href="//en.unesco.org" target="_blank">
+          <img src="/sites/all/themes/ipbes_new/panels/layouts/ipbes_front_new/img/unesco.png" alt="UNESCO"/>
+        </a>
+        <a href="//www.fao.org/home/en" target="_blank">
+          <img src="/sites/all/themes/ipbes_new/panels/layouts/ipbes_front_new/img/fao.png" alt="FAO"/>
+        </a>
+        <a href="//www.undp.org" class="slim" target="_blank">
+          <img src="/sites/all/themes/ipbes_new/panels/layouts/ipbes_front_new/img/undp.png" alt="UNDP"/>
+        </a>
+      </div>
+    </div>
   </div>
 </footer>

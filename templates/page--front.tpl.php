@@ -45,9 +45,10 @@
       </div>
       <div class="col-md-3 col-md-offset-5">
         <div class="search-widget">
-          <form>
-            <input type="text" placeholder="Enter search terms" />
-          </form>
+          <?php
+            $block = module_invoke('views', 'block_view', '-exp-search_index-page');
+              print render($block['content']);
+          ?>
         </div>
         <div class="register-links">
           <?php
@@ -101,5 +102,3 @@
     <?php print render($page['content']); ?>
   </div>
 </div>
-
-<!-- <?php echo path_to_theme(); ?>-->

@@ -10,6 +10,7 @@ base theme  = nuboot_radix
 ; Regions
 regions[header]         = 'Header'
 regions[content]         = 'Content'
+regions[sidebar]        = 'Sidebar'
 
 ; Breakpoints
 breakpoints[xs] = (max-width: 767px)
