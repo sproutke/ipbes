@@ -58,6 +58,10 @@
         outline: none;
       }
     }
+
+    .btn.btn-default {
+      display: none;
+    }
   }
 
   .register-links {
@@ -101,7 +105,8 @@
 
 // slider styles
 .panel-slider {
-  margin-top: -0.3em;
+  // margin-top: -0.3em;
+  // disabled because of firefox
 
   .pane-ipbes-slideshow {
     // .panel-full-width .pane-content, .panel-dkan-front .pane-content
@@ -127,7 +132,7 @@
           padding: 2em 1em;
           position: absolute;
           width: 100%;
-          bottom: 1.25em;
+          bottom: 0;
 
           .flexslider-title {
             a {

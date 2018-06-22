@@ -137,7 +137,7 @@
         <?php endif; ?>
 
         <?php
-            if (!empty($page['sidebar_second'])):
+            if (!empty($page['sidebar'])):
             echo '<section class="col-md-9" role="main">';
             else:
             echo '<section role="main">';
@@ -147,9 +147,9 @@
         <?php print render($page['content']); ?>
     </section>
 
-    <?php if (!empty($page['sidebar_second'])): ?>
+    <?php if (!empty($page['sidebar'])): ?>
     <aside class="sidebar col-md-3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
+        <?php print render($page['sidebar']); ?>
     </aside>
     <!-- /#sidebar-second -->
     <?php endif; ?>

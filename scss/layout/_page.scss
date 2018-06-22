@@ -8,9 +8,15 @@
     background-color: $primary-color;
     border-color: $primary-color;
 
-    // .navbar-default .navbar-nav>li>a
     .navbar-nav>li>a {
       color: #ffffff;
+    }
+
+    .navbar-nav>.active>a,
+    .navbar-nav>.active>a:hover,
+    .navbar-nav>.active>a:focus {
+      background-color: #ffffff;
+      color: $primary-color;
     }
 
     a {
@@ -33,6 +39,108 @@
         &:hover,
         &:focus {
           background-color: #ffffff;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+
+// Breadcrumbs
+
+.breadcrumb {
+  li {
+    font-size: 1.2em;
+    a {
+      color: $primary-color;
+      padding-left: 0;
+    }
+  }
+}
+
+
+// page styles
+
+.main-row {
+  h1.page-header {
+    color: $primary-color;
+  }
+
+  // Events
+  .node-ipbes-events {
+    .content {
+      font-size: 1.1em;
+
+      .field-name-field-registration {
+        margin-bottom: 2em;
+      }
+    }
+  }
+
+  // documents
+  .view-documents-presentation {
+    .documents-group {
+      background-color: #eee;
+      padding: 1em;
+      display: inline-block;
+      margin-right: 1em;
+
+      // format container
+      .view-grouping-level-1 {
+        float: left;
+        margin-right: 1em;
+      }
+
+      .views-row {
+        float: left;
+      }
+
+      .view-grouping-content a {
+        background-color: #fff;
+        padding-left: 0.15em;
+        margin-right: 0.5em;
+        display: block;
+        text-align: center;
+        color: $primary-color;
+      }
+    }
+
+    .view-grouping {
+      clear: left;
+    }
+  }
+
+  // resources
+  .view-ipbes-document-file-index {
+
+  }
+
+  // sidebar
+  .region-sidebar {
+    .block-menu-block {
+      background: #eee;
+
+      h2 {
+        font-size: 1.5em;
+        a {
+          color: $primary-color;
+          padding: 0 0.75em;
+        }
+      }
+    }
+
+    .nav-pills {
+      li {
+        &.active {
+          a {
+            background-color: $primary-color;
+            color: #ffffff;
+
+          }
+        }
+        a {
+          border-radius: 0;
           color: $primary-color;
         }
       }
