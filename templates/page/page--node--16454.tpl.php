@@ -30,7 +30,7 @@ drupal_add_library('system', 'drupal.collapse');
       </div>
     <?php endif; ?>
     <!-- views exposed search -->
- 
+
 	<div class="pull-right">
 	<?php
       $block = module_invoke('views', 'block_view', '-exp-search_index-page');
@@ -163,18 +163,28 @@ drupal_add_library('system', 'drupal.collapse');
   </div> <!-- /#main -->
 </div> <!-- /#main-wrapper -->
 <footer id="footer" class="footer">
-  <div class="container">
-  <div class="col-xs-12 col-md-4"><?php print render($page['footer_first']); ?></div>
-  <div class="col-xs-12 col-md-4"><?php print render($page['footer_second']); ?></div>
-  <div class="col-xs-12 col-md-4"><?php print render($page['footer_third']); ?></div>
-  </div>
-</footer>
-
-<footer id="footer" class="footer-clean">
-  <div class="container">
-    <?php if ($copyright): ?>
-      <small class="copyright"><?php print $copyright; ?></small>
-    <?php endif; ?>
-    <?php print render($page['footer']); ?>
+  <div class="container copyright">
+    <div class="row">
+      <div class="ipbes-mark col-md-6">
+        <p>&copy; IPBES Secretariat</p>
+        <?php if($content['footer-contacts']): ?>
+          <?php print $content['footer-contacts']; ?>
+        <?php endif; ?>
+      </div>
+      <div class="partner-logos col-md-6">
+        <a href="//www.unenvironment.org" target="_blank">
+          <img src="/sites/all/themes/ipbes_new/panels/layouts/ipbes_front_new/img/unep.png" alt="UNEP"/>
+        </a>
+        <a href="//en.unesco.org" target="_blank">
+          <img src="/sites/all/themes/ipbes_new/panels/layouts/ipbes_front_new/img/unesco.png" alt="UNESCO"/>
+        </a>
+        <a href="//www.fao.org/home/en" target="_blank">
+          <img src="/sites/all/themes/ipbes_new/panels/layouts/ipbes_front_new/img/fao.png" alt="FAO"/>
+        </a>
+        <a href="//www.undp.org" class="slim" target="_blank">
+          <img src="/sites/all/themes/ipbes_new/panels/layouts/ipbes_front_new/img/undp.png" alt="UNDP"/>
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
