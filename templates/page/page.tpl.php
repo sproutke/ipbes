@@ -172,7 +172,7 @@
         <?php endif; ?>
       </div>
       <div class="partner-logos col-md-6">
-        <a href="//www.unep.org" target="_blank">
+        <a href="//www.unenvironment.org" target="_blank">
           <img src="/sites/all/themes/ipbes_new/panels/layouts/ipbes_front_new/img/unep.png" alt="UNEP"/>
         </a>
         <a href="//en.unesco.org" target="_blank">
