@@ -1,0 +1,106 @@
+/* =========== MS: General type mods ============ */
+hr {
+    border-top: 1px solid #dddddd;
+    clear: both
+}
+h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+ol {
+    padding-left: 1em
+}
+
+/* =========== MS: General blockquote update ============ */
+blockquote {
+    background: #c2e0e0;
+    margin: 0 0 1em 0;
+    padding: 0.75em 1em;
+    border: none;
+    border-left: 6px solid #098380;
+}
+blockquote *:first-child {
+    margin-top: 0
+}
+blockquote p,
+blockquote li {
+    margin-bottom: 0.5em;
+}
+blockquote p:last-child,
+blockquote li:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+    margin-bottom: 0;
+}
+blockquote footer,
+blockquote small,
+blockquote .small {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857;
+}
+blockquote footer:before,
+blockquote small:before,
+blockquote .small:before {
+    content: '\2014 \00A0';
+}
+.blockquote-reverse,
+blockquote.pull-right {
+    border-left: 0;
+    border-right: 6px solid #098380;
+    text-align: right;
+}
+.blockquote-reverse footer:before,
+.blockquote-reverse small:before,
+.blockquote-reverse .small:before,
+blockquote.pull-right footer:before,
+blockquote.pull-right small:before,
+blockquote.pull-right .small:before {
+    content: '';
+}
+.blockquote-reverse footer:after,
+.blockquote-reverse small:after,
+.blockquote-reverse .small:after,
+blockquote.pull-right footer:after,
+blockquote.pull-right small:after,
+blockquote.pull-right .small:after {
+    content: '\00A0 \2014';
+}
+
+/* =========== BA: Styling chosen ============*/
+.chosen-container a {
+    min-width: 200px;
+}
+.chosen-container .chosen-with-drop .chosen-drops {
+    min-width: 200px;
+}
+.chosen-container-single .chosen-search input[type="text"] {
+    min-width: 200px;
+    background: white url(/profiles/dkan/libraries/chosen/chosen-sprite.png) no-repeat 100% -20px;
+}
+.chosen-container .chosen-results {
+    min-width: 200px;
+}
+
+/* =========== BA: Number circle ============*/
+.numberCircle {
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid;
+    font-size: 100px;
+  }
+.numberCircle:before,
+.numberCircle:after {
+    content: '\200B';
+    display: inline-block;
+    line-height: 0px;
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+.numberCircle:before {
+    padding-left: 8px;
+  }
+.numberCircle:after {
+    padding-right: 8px;
+  }

@@ -1,0 +1,33 @@
+/*/ === IPBES === /*/
+/* =========== BA: Style ILK-Global Assessment Survey ============*/
+#webform-client-form-7615 {
+    background: rgba(0, 0, 2, 0.1);
+    padding: 20px;
+  }
+#webform-client-form-7615 a {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+/*
+#webform-client-form-7615 label {
+font-size: 20px;
+}
+*/
+.webform-progressbar {
+    color: green;
+    text-transform: uppercase;
+  }
+.roundedBorder {
+    border: 2px solid #A4AD5F;
+    border-radius: 20px;
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+  }
+#webform-client-form-7615 .form-actions {
+    background-color: transparent;
+  }
+#webform-client-form-7615 .panel-title {
+    font-size: 20px;
+    font-weight: bold;
+  }

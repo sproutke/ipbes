@@ -1,0 +1,162 @@
+/* =========== MS: Sidebar ============ */
+aside.sidebar {} aside.sidebar section.block {
+    font-size: 15px;
+    line-height: 1.25em;
+    background: #c2e0e0;
+    padding: 10px;
+    border-bottom: 6px solid white;
+    margin-bottom: 0;
+}
+aside.sidebar section.block-menu-block.block {
+    line-height: 1.15em;
+    padding: 0
+}
+aside.sidebar h2,
+aside.sidebar h4,
+.col-md-3.radix-layouts-sidebar h2.pane-title {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0 0 5px 0;
+}
+/* ---- MS: Sidebar headings -- */
+aside.sidebar #block-views-sidebar-fields-block-10 h4 {
+    text-transform: lowercase;
+}
+aside.sidebar #block-views-sidebar-fields-block-10 h4::first-letter {
+    text-transform: uppercase;
+}
+aside.sidebar #block-views-sidebar-fields-block-10 h4:nth-child(2) {
+    margin-top: 3px
+}
+/* ---- MS: Sidebar menu-block -- */
+aside.sidebar .nav-pills>li.active>a,
+aside.sidebar .nav-pills>li.active>a:hover,
+aside.sidebar .nav-pills>li.active>a:focus {} .nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {} aside.sidebar section.block-menu-block.block h2 {
+    font-size: 16px;
+    color: #0a8380!important;
+    line-height: 1.25em;
+    display: block;
+    margin: 0;
+    padding: 5px 10px;
+}
+aside.sidebar section.block-menu-block.block h2 a {
+    display: block;
+    font-size: inherit;
+}
+aside.sidebar section.block-menu-block.block h2 a:hover {
+    background: transparent!important;
+    text-decoration: underline;
+}
+aside.sidebar .menu-block-wrapper > .menu>li.first>a {
+    border-top: 0.0625rem solid #fff;
+}
+aside.sidebar .menu-block-wrapper > .menu>li.last>a {
+    border-bottom: none;
+}
+aside.sidebar .menu,
+aside.sidebar .menu li {
+    margin: 0!important;
+    padding: 0!important;
+}
+aside.sidebar .menu li a {
+    border-color: #fff!important;
+}
+aside.sidebar .menu-block-wrapper .menu li a {
+    padding: 0.3em 5px 0.3em 18px!important;
+}
+aside.sidebar .menu li .menu li a {
+    font-size: 96%;
+    padding-left: 26px !important;
+}
+aside.sidebar .menu li .menu li .menu li a {
+    font-size: 92%;
+    padding-left: 34px !important;
+}
+aside.sidebar .menu li .menu li .menu li .menu li a {
+    font-size: 88%;
+    padding-left: 42px !important;
+}
+aside.sidebar .menu li .menu li .menu li .menu li .menu li a {
+    font-size: 84%;
+    padding-left: 50px !important;
+}
+aside.sidebar .menu li .menu li .menu li .menu li .menu li .menu li a {
+    font-size: 80%;
+    padding-left: 58px !important;
+}
+aside.sidebar .menu li .menu li .menu li .menu li .menu li .menu li .menu li a {
+    font-size: 76%;
+    padding-left: 66px !important;
+}
+aside.sidebar .menu-block-wrapper a.active-trail:not(.active) {
+    color: #0a8380!important;
+    background: transparent!important;
+}
+aside.sidebar .menu-block-wrapper a:not(.active):hover,
+aside.sidebar .menu-block-wrapper a.active-trail:not(.active):hover {
+    color: #0a8380!important;
+    background-color: #eee!important;
+    text-decoration: none;
+}
+aside.sidebar .menu-block-wrapper a:focus {
+    color: #0a8380!important;
+}
+aside.sidebar .menu-block-wrapper a:active {
+    color: #FFF!important;
+    background-color: #337ab7!important;
+}
+aside.sidebar ul.menu {
+    margin-left: 0!important;
+}
+aside.sidebar section.block:last-child {
+    margin-bottom: 0
+}
+aside.sidebar .views-field {
+    margin-bottom: 5px
+}
+aside.sidebar .views-field .views-label {
+    font-weight: bold
+}
+aside.sidebar .views-field:last-child {
+    margin-bottom: 0
+}
+aside.sidebar .item-list ul {
+    margin: 0
+}
+aside.sidebar .item-list ul li {
+    color: #0a8380;
+    margin: 0 0 0 1em;
+}
+aside.sidebar .block p {
+    margin: 0
+}
+aside.sidebar .item-list ul li a:hover {
+    color: #0a8380
+}
+section[class|='col'] {
+    padding-right: 15px;
+    padding-left: 0;
+}
+aside.sidebar .view-footer {margin-top:2px}
+@media all and (max-width: 767px) {
+    aside[class|='col'],
+    section[class|='col'] {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+/* =========== BA: Side navigation ============*/
+.subnav-li {
+    border-radius: 0px;
+    border-bottom: 0.0625rem solid #0a8380;
+}
+.subnav-li a:hover {
+    background-color: #eeeeee;
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+}
