@@ -183,12 +183,47 @@
   }
 
   .top-menu .navbar-default {
-    background-color: transparent;
-    border-color: transparent;
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
 
     .navbar-header {
       float: right;
       margin-top: -4em;
+    }
+
+    .navbar-nav>li>a {
+      background-color: $primary-color;
+    }
+
+    .navbar {
+      ul.menu {
+        li.expanded.dropdown.last {
+          .dropdown-menu {
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .panel-slider {
+    .pane-ipbes-slideshow {
+      .pane-content {
+        .flexslider {
+          .flex-caption {
+            .flexslider-title {
+              a {
+                font-size: 1.1em;
+              }
+            }
+            .call-to-action {
+              a {
+                font-size: 1em;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
