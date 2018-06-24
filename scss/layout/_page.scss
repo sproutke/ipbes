@@ -29,6 +29,12 @@
 
     ul.menu {
       float: right;
+
+      li.expanded.dropdown.last {
+        .dropdown-menu {
+          left: -143px;
+        }
+      }
     }
 
     .dropdown-menu {
