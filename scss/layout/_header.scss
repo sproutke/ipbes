@@ -194,16 +194,10 @@
     .navbar-nav>li>a {
       background-color: $primary-color;
     }
+  }
 
-    .navbar {
-      ul.menu {
-        li.expanded.dropdown.last {
-          .dropdown-menu {
-            left: 0;
-          }
-        }
-      }
-    }
+  .top-menu .navbar ul.menu li.expanded.dropdown.last .dropdown-menu {
+    left: 0px !important;
   }
 
   .panel-slider {
