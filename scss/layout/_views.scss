@@ -1185,10 +1185,24 @@ fieldset.custom-expander br {
   display: none;
 }
 
+#views-exposed-form-policy-support-index-test-page .form-control {
+  width: auto;
+  display: inline-block;
+  height: auto;
+  border: 0px;
+  box-shadow: none;
+
+  &.form-text {
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+}
+
 /*/ === MS: Policy support get started block === /*/
 .get-started-block {
     background: #fff;
-    margin: -20px 0 15px 0;
+    // margin: -20px 0 15px 0;
+    margin: 0px;
   }
 .get-started-block fieldset.custom-expander .inner-wrapper {
     padding: 1px 10px 1px 25px;
