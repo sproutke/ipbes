@@ -124,6 +124,10 @@
             // max-height: 600px;
             height: auto;
           }
+
+          li > a {
+            position: absolute;
+          }
         }
 
         .flex-direction-nav a:before {

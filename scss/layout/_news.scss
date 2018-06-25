@@ -80,14 +80,6 @@
     }
   }
 
-  .events {
-    margin-top: 0;
-  }
-
-  .notifications {
-    margin-bottom: 0;
-  }
-
   .view-content {
 
     .views-field-title {
@@ -106,6 +98,7 @@
 }
 
 .events {
+  margin-top: 0;
   h2.pane-title {
     color: $primary-color;
   }
@@ -125,6 +118,7 @@
 
 .notifications {
   background-color: $primary-color;
+  margin-bottom: 0;
 
   h2.pane-title {
     color: #ffffff;
