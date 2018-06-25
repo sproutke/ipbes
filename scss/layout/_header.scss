@@ -103,6 +103,10 @@
   margin-bottom: 0;
 }
 
+.navigation-wrapper {
+  background-color: $primary-color;
+}
+
 // slider styles
 .panel-slider {
   // margin-top: -0.3em;
@@ -180,6 +184,10 @@
     .register-links {
       margin-bottom: 1em;
     }
+  }
+
+  .navigation-wrapper {
+    background-color: #ffffff !important;
   }
 
   .top-menu .navbar-default {
