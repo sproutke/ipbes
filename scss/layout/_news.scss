@@ -6,11 +6,17 @@
   }
 
   .pane-content {
+
+    .view-content {
+      display: flex;
+    }
+
     .views-row.news-item {
 
       .fields-container {
         background-color: $primary-color;
         min-height: 450px;
+        height: 100%;
         padding-bottom: 2em;
       }
 
