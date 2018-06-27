@@ -10,6 +10,14 @@
 
     .navbar-nav>li>a {
       color: #ffffff;
+      // padding: 0.75em 15px;
+    }
+
+    .navbar-nav .open > a,
+    .navbar-nav li > a,
+    .user-menu .open > a,
+    .user-menu li > a {
+      padding: 0.75em 15px;
     }
 
     .navbar-nav>.active>a,
@@ -120,6 +128,11 @@
   // resources
   .view-ipbes-document-file-index {
 
+  }
+
+  // facet api
+  .pane-facetapi h2.pane-title {
+    background-color: $primary-color;
   }
 
   // sidebar
