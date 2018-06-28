@@ -187,6 +187,12 @@
   }
 
   .news {
+    .pane-content {
+      .view-content {
+        display: block;
+      }
+    }
+
     .news-item {
       margin-bottom: 1em;
     }
